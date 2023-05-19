@@ -1,6 +1,7 @@
 import css from './Statistics.module.css';
 import data from '../../data.json';
 import generateRandomColor from './RandomColor.js';
+import PropTypes from 'prop-types';
 
 export const Statistics = () => {
   if (!data) {
@@ -11,13 +12,18 @@ export const Statistics = () => {
   <h2 className={css.title}>upload stats</h2>
 
   <ul className={css.stat_list}>
-        {data.map(({ id, label, percentage }) => {          
-
-          return <li key={id} className={css.item}
-            style={{ background: generateRandomColor() }}>
-         <span className={css.label}>{label }</span>
-         <span className={css.percentage}>{percentage}%</span>
-        </li>})}
+      {data.map(({ id, label, percentage }) => {          
+        return <li key={id} className={css.item}
+          style={{ background: generateRandomColor() }}>
+       <span className={css.label}>{label }</span>
+       <span className={css.percentage}>{percentage}%</span>
+      </li>})}
   </ul>
 </section>)
+}
+
+Statistics.propTypes = {
+  id:PropTypes.string,
+  label:PropTypes.string,
+  percentage:PropTypes.number
 }

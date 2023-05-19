@@ -1,4 +1,5 @@
-import css from './Profile.module.css'
+import css from './Profile.module.css';
+import PropTypes from 'prop-types';
 
 export const Profile = ({username, avatar, tag, location, stats}) => {
   
@@ -33,3 +34,10 @@ export const Profile = ({username, avatar, tag, location, stats}) => {
   )
 }
 
+Profile.propTypes = {
+  avatar:PropTypes.string,
+  username:PropTypes.string,
+  location:PropTypes.string,
+  tag:PropTypes.string, 
+  stats:PropTypes.object
+}

@@ -2,7 +2,8 @@
   width: 350px;
   margin-top: 50px;
   border: 1px solid gray;
-  border-radius: 0 0 5px 5px;
+  border-radius: 0 0 8px 8px;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3);
 }
 
 .title {
@@ -27,11 +28,11 @@
 }
 
 .item:first-child{
-  border-bottom-left-radius: 5px;
+  border-bottom-left-radius: 8px;
 }
 
 .item:last-child {
-  border-bottom-right-radius: 5px;
+  border-bottom-right-radius: 8px;
 }
 
 .label {

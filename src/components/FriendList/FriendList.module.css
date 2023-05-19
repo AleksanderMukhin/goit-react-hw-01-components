@@ -1,0 +1,42 @@
+.friend__list {
+  margin-top: 40px;
+}
+
+.item {
+  display: flex;
+  width: 300px;
+  align-items: center;
+  margin-bottom: 20px;
+  border: 1px solid rgb(106, 98, 98);
+  border-radius: 7px;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.status {
+  display: flex;
+  width: 15px;
+  height: 15px;
+  margin-left: 15px;
+  border-radius: 50%;
+}
+
+.status.online {
+  background: rgb(14, 185, 91);
+}
+
+.status.ofline {
+  background: rgb(222, 171, 40);
+}
+
+.avatar{
+  width: 80px;
+  border: 1px solid rgb(190, 180, 180);
+  margin: 5px 15px;
+  border-radius: 7px;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.name {
+  font-size: 30px;
+  color: rgb(103, 96, 96);
+}

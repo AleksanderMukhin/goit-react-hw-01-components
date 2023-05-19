@@ -1,0 +1,32 @@
+.transaction__history {
+  margin-top: 40px;
+  border: 1px solid black;
+  width: 500px;
+}
+
+.transaction__head {
+  background: rgb(45, 200, 231);
+  font-size: 16px;
+  color: azure;
+  text-transform: uppercase;
+}
+
+.row__head {
+  padding: 10px 0px;
+}
+
+.transactions {
+  font-size: 16px;
+  text-align: center;
+  padding: 10px 0px;
+  color: rgb(114, 106, 106);
+}
+
+.transactions:first-child{
+  text-transform: capitalize;
+}
+
+.transactions_list:nth-child(2n) {
+  background-color: white;
+}
+
